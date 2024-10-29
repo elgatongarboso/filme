@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Review System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>🎬 Movie Review System</h1>
+        <input type="text" id="searchBar" placeholder="Search for a movie...">
+    </header>
+
+    <div class="movie-container">
+        <button class="nav-btn" id="prevMovieBtn">⬅️ Previous</button>
+
+        <div class="movie-display">
+            <img id="movieImage" src="default.jpg" alt="Movie Poster">
+            <h2 id="movieTitle">Movie Title</h2>
+        </div>
+
+        <button class="nav-btn" id="nextMovieBtn">➡️ Next</button>
+    </div>
+
+    <section class="rating-section">
+        <h3>Review and Rate</h3>
+
+        <div class="review-container">
+            <div class="user-review" id="user1-review">
+                <h4>User 1</h4>
+                <label for="user1-comment">Comment:</label>
+                <textarea id="user1-comment" placeholder="Your review..."></textarea>
+                
+                <label for="user1-rating">Rating (0-10):</label>
+                <input type="number" id="user1-rating" min="0" max="10">
+            </div>
+
+            <div class="user-review" id="user2-review">
+                <h4>User 2</h4>
+                <label for="user2-comment">Comment:</label>
+                <textarea id="user2-comment" placeholder="Your review..."></textarea>
+
+                <label for="user2-rating">Rating (0-10):</label>
+                <input type="number" id="user2-rating" min="0" max="10">
+            </div>
+        </div>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+</html>
